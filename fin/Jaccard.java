@@ -22,7 +22,7 @@ import org.apache.spark.api.java.function.PairFlatMapFunction;
 import org.apache.spark.api.java.function.ReduceFunction;
 import scala.Tuple2;
 
-
+ 
 
 public class Jaccard  implements Function2 <String,String,String>{
 	/*L'IDEA E' QUELLA DI APPLICARE LA JACCARD SIMILARITY TRA LE SEQUENZE
