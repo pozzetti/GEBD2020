@@ -33,7 +33,7 @@ public static void main(String[] args) {
    //Connessione Spark
 	Logger.getLogger("org").setLevel(Level.ERROR);
 	Logger.getLogger("akka").setLevel(Level.ERROR);
-	
+	 
 	SparkConf sc = new SparkConf();
 	sc.setAppName("Test");
 	sc.setMaster("local[*]");
