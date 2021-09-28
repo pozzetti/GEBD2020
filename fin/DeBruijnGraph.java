@@ -22,7 +22,7 @@ import org.apache.spark.api.java.function.PairFlatMapFunction;
 import scala.Tuple2;
 
 
-public class DeBrujineGraph implements PairFlatMapFunction<String,Integer,String>  {
+public class DeBruijnGraph implements PairFlatMapFunction<String,Integer,String>  {
 	
 	
 	public java.util.Iterator<Tuple2<Integer,String>> call (String line){
