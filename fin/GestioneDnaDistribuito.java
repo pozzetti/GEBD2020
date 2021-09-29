@@ -44,7 +44,7 @@ public static void main(String[] args) {
 	
 	JavaRDD<String> dReads = jsc.textFile("Chimpanzee.txt");
 	JavaRDD<String> dRead = dReads.flatMap(new EstrapolaParole());
-	JavaPairRDD <Integer,String> Pair = dRead.flatMapToPair(new DeBrujineGraph());
+	JavaPairRDD <Integer,String> Pair = dRead.flatMapToPair(new DeBruijnGraph());
 	Pair.foreach(x->System.out.println("SEQUENZA:"+x));
 	
 	
